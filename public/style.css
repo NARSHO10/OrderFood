@@ -1,0 +1,17 @@
+/*.card-body{
+    background-color: rgb(37, 33, 88);
+    border-radius: 10px;
+}
+.card-title{
+    color: black;
+}
+.btn-sm{
+    background-color: blue;
+    color: white;
+}
+.Dashbody{
+    background-color: rgb(128, 123, 123);
+}
+.card-body p{
+    color: white;
+}
