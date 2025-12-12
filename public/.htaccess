@@ -1,0 +1,14 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Prevent directory listing
+    Options -Indexes
+
+    # If the request is not for an existing file
+    RewriteCond %{REQUEST_FILENAME} !-f
+    # If the request is not for an existing directory
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    # Route all other requests to index.php
+    RewriteRule ^ index.php [L]
+</IfModule>
