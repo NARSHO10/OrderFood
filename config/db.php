@@ -2,10 +2,11 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-$servername = "localhost";
-$username   = "root";
-$password   = "";
-$database   = "FoodOrderingApp";
+// Load environment variables
+$servername = getenv('DB_HOST') ;
+$username   = getenv('DB_USER') ;
+$password   = getenv('DB_PASSWORD') ;
+$database   = getenv('DB_NAME') ;
 
 // Connect to MySQL server (no DB yet)
 $conn = new mysqli($servername, $username, $password);
