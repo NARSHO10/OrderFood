@@ -27,7 +27,7 @@ $stmt->bind_param("i", $userId);
 $stmt->execute();
 $result = $stmt->get_result();
 while ($row = $result->fetch_assoc()) {
-    $orders[] = $row;
+    $orders[] =  $row;
 }
 $stmt->close();
 ?>
